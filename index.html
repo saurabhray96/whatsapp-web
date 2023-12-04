@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="wapp.css">
+        <link rel="stylesheet" href="all.css">
+        <title>watsapp front</title>
+    </head>
+    <body >
+        <dialog id="searchdia"  >
+       <div id="sdiv">
+        <button onclick="ofsearch()"><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #100e0e;"></i></button>
+        <input type="search" placeholder="Search...">
+       </div>
+       <button class="s-btn">Unread</button> <button class="s-btn">Photo</button> <button class="s-btn">Video</button>
+       <button class="s-btn">Links</button> <button class="s-btn">GIFs</button> <button class="s-btn">Audio</button>
+       <button class="s-btn">Documents</button> <button class="s-btn">Polls</button> 
+       
+    </dialog>
+        <dialog  id="stg">
+            <dialog id="stgbox">
+            <div class="stg-box">New group</div>
+            <div class="stg-box">New broadcast</div>
+            <div class="stg-box">Linked device</div>
+            <div class="stg-box">Starred massage</div>
+            <div class="stg-box">Paymants</div>
+            <div class="stg-box">Setting</div>
+            </dialog>
+        </dialog>
+        <dialog open="" id="footer">
+            <div class="footerbox"> <button type="button" class="f-btn" value="chat"><i id="i-c" class="fa-solid fa-list fa-xl" style="color: rgb(0, 0, 0);"></i></button> <P>chat</P></div>
+            <div class="footerbox"> <button type="button" class="f-btn" value="chat"><i id="i-c" class="fa-solid fa-heart-circle-plus fa-xl" style="color: rgb(92, 91, 91);"></i></button> <P>Status</P></div>
+            <div class="footerbox"> <button type="button" class="f-btn" value="chat"><i id="i-c" class="fa-solid fa-people-group fa-xl" style="color: rgb(84, 84, 84);"></i></button> <P>Communities</P></div>
+            <div class="footerbox"> <button type="button" class="f-btn" value="chat"><i id="i-c" class="fa-solid fa-phone fa-xl" style="color: rgb(76, 76, 75);" ></i></button> <P>Calls</P></div>
+        </dialog>
+        <header id="header-1">
+            <div id="wapp-1">Whatsapp</div>
+            <button class="" type="button" onclick="setting()" id="setting0" ><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></button>
+            <button class="" type="button" onclick="opnsearch()" ><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            <button class="" type="button" onclick="opencamera()" ><i class="fa-solid fa-camera fa-xl"></i></button>
+        
+        </header>
+        
+         <section id="section">
+            
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('My number🙂(you)',1)" ><img id="dp1"  src="dp-1.jpg" alt="No-icon"></div>
+                <div class="name-" onclick="openchat('My number🙂(you)',1)"> 
+                    <h6 class="allname">My number🙂(you)<p id="p">8:14 PM</p></h6>
+                    <p class="send">Video</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('Degree 2023 B1 Alok Sir',2)" ><img id="dp2" src="dp-2.jpg" alt=""></div>
+                <div class="name-"  onclick="openchat('Degree 2023 B1 Alok Sir',2)">
+                    <h6 class="allname">Degree 2022 B1 Alok Sir<p id="p" >7:17 PM</p></h6>
+                    <p class="send">Sana Mam Ica Buxipur: Danik Jagra...</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('🤫🤐silent treatment😌😌',3)" ><img id="dp3" src="dp-3.jpg" alt="No-icon"></div>
+                <div class="name-" onclick="openchat('🤫🤐silent treatment😌😌',3)">
+                    <h6 class="allname">🤫🤐silent treatment😌😌<p id="p">2:22 PM</p></h6>
+                    <p class="send">You: Location</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-" onclick="onclickpic('Sarita Didi 1',4)"><img id="dp4" src="dp-4.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Sarita Didi 1',4)">
+                    <h6 class="allname">Sarita Didi 1<p id="p">11:25 AM</p></h6>
+                    <p class="send"> Super🥰</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-" onclick="onclickpic('Vinay Bhabhi',5)"><img id="dp5" src="dp-5.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Vinay Bhabhi',5)">
+                    <h6 class="allname">Vinay Bhabhi<p id="p">11:19 AM</p></h6>
+                    <p class="send"> Missed video call</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('Govind Sir 3',6)" ><img id="dp6" src="dp-6.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Govind Sir 3',6)">
+                    <h6 class="allname">Govind Sir 3<p id="p">9:26 AM</p></h6>
+                    <p class="send">Reacted to❤️"Thanks you sir "</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-" onclick="onclickpic('Pritam bhaiya',7)" id="status-6" ><img id="dp7" src="dp-7.jpg"  alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Pritam bhaiya',7)">
+                    <h6 class="allname">Pritam bhaiya<p id="p">Yesterday</p></h6>
+                    <p class="send">Hello sir...</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('Maa',8)" ><img id="dp8" src="dp-8.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Maa',8)">
+                    <h6 class="allname">Maa<p id="p">Yesterday</p></h6>
+                    <p class="send">Photo</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('alok Sharma bca ica',9)" ><img id="dp9" src="dp-9.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('alok Sharma bca ica',9)">
+                    <h6 class="allname">alok Sharma bca ica<p id="p">9/4/23</p></h6>
+                    <p class="send"> Reacted😂to "bhut chamak rhi ho"</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-" onclick="onclickpic('Rahul bhaiya 1',10)"><img id="dp10" src="dp-10.png" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('Rahul bhaiya 1',10)">
+                    <h6 class="allname">Rahul bhaiya 1<p id="p">9/4/23</p></h6>
+                    <p class="send"> Photo</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-" onclick="onclickpic('',)"><img id="dp10" src="dp-9.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('alok Sharma bca ica',11)">
+                    <h6 class="allname">alok Sharma bca ica<p id="p">9/4/23</p></h6>
+                    <p class="send"> Reacted😂to "bhut chamak rhi ho"</p>
+                </div>
+            </div>
+            <div class="div-8">
+                <div class="dp-"onclick="onclickpic('',)" ><img id="dp11" src="dp-9.jpg" alt="No-icon"></div>
+                <div class="name-"onclick="openchat('alok Sharma bca ica',11)">
+                    <h6 class="allname">alok Sharma bca ica<p id="p">9/4/23</p></h6>
+                    <p class="send"> Reacted😂to "bhut chamak rhi ho"</p>
+                </div>
+            </div>
+            <video autoplay  id="video">hello</video>
+            </section>
+            <dialog id="profile-cover" onclick="offprofile()">
+                <div id="profile-div">
+                    <header id="profile-div-header"><p id="profile-div-header-name" >Rahul bhaiya 1</p></header>
+                    <div id="profile-div-div2"></div>
+                    <footer id="profile-div-footer" >
+                        <button class="profile-div-footer-button"><i class="fa-solid fa-circle-exclamation fa-rotate-180 fa-xl" style="color: #219384;"></i></button>
+                        <button class="profile-div-footer-button"><i class="fa-solid fa-video fa-xl" style="color: #2aaa99;"></i></button>
+                        <button class="profile-div-footer-button"><i class="fa-solid fa-phone fa-xl" style="color: #2aaa99;"></i></button>
+                        <button class="profile-div-footer-button"><i class="fa-solid fa-list fa-xl"  style="color:  #2aaa99;"></i></button>
+                    </footer>
+                </div>
+            </dialog>
+            
+         <script type="text/javascript" src="wapp.js"></script>
+    </body>
+</html>

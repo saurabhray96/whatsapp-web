@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="wapp2.css">
+        <link rel="stylesheet" href="all.css">
+        <title>dialoag setting</title>
+    </head>
+    <body>
+        <header>
+            <div id="wapp-1">
+                <div class="back-dp-btn"  onclick="backMain()">
+                <div class="back-btn"><i class="fa-solid fa-arrow-right fa-rotate-180" style="color: #ffffff;"></i></div>
+                <div class="back-dp"><img id="dpcnt" src="dp-1.jpg" alt=""></div>
+                </div>
+                <div class="contact-name">
+                    <h3 class="cnt-style" id="name">My number🙂(you)</h3>
+                    <p class="online">Online</p>
+                </div>
+            </div>
+            <button class="" type="button" onclick="setting()" id="setting0" ><i class="fa-solid fa-ellipsis-vertical fa-xl"></i></i></button>
+            <button class="" type="button" ><i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i></button>
+            <button class="" type="button" onclick="videocamera()" id="but"><i class="fa-solid fa-video fa-xl" style="color: #ffffff;"></i></button>
+        </header>
+        <section class="all-chat-section">
+           <!---  <div class="all-chat" ><p class="send-chat-01" id="send-chat-01"></p></div>  --->
+        </section>
+       <dialog open id="msg-box">
+        <div class="msg-chat-box">
+            <button type="button" class="emogi" value="emogi"><i class="fa-regular fa-face-grin fa-xl" style="color: #86898d;"></i></button>
+           <form action="" name="inp"> <input type="text" id="chat-inp" onkeyup="chatInp()" placeholder="Message" class="chat" style="width: 100%; border-color:transparent; outline: none;"></form>
+            <button type="button" class="clip" value="clip"><i class="fa-solid fa-paperclip fa-rotate-270 fa-xl" style="color: #9d9e9f;"></i></button>
+            <button type="button" class="camera" value="camera" id="rsymbol"><i class="fa-solid fa-indian-rupee-sign fa-xl" style="color:#9d9e9f;"></i></button>
+            <button type="button" class="camera" value="camera"><i class="fa-solid fa-camera fa-xl" style="color: #929396;"></i></button>
+        </div>
+        <div class="mic-box" >
+            <div class="mic-box-icon" id="send-a-c" onclick="sendAC()"><i id="mic-icon" class="fa-solid fa-microphone fa-xl" style="color: #ffffff;"></i></div>
+        </div>
+       </dialog>
+        <script type="text/javascript" src="wapp2.js"></script>
+    </body>
+</html>
